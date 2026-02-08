@@ -1,15 +1,25 @@
+/* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #FFA785;
-    background-color:#FFDED2;
+    color: #5e2d1a;
+    background-color: #FFDED2;
+    background-image: url('img/back.jpg');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #CCB2A8;
-    color: white;
+    background-image: url('img/back.jpg');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #5e2d1a;
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -20,7 +30,8 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #CCB2A8;
+    background-color: rgba(217, 187, 176, 0.7);
+    margin: 0;
 }
 
 nav ul li {
@@ -36,15 +47,28 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #CCB2A8;
+    color: #f5f3f2;
 }
 
 main {
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    padding: padding: 10px 30px 30px 30px;
+    background: rgba(217, 187, 176, 0.8); 
+    border-radius: 15px;
+}
+
+.about-us h2, 
+main article h2 {
+    border-bottom: 2px solid #CCB2A8;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #5e2d1a;
+}
+
+h2, h3 {
+    color: #5e2d1a;
 }
 
 .lecturer {
@@ -56,9 +80,9 @@ main {
 }
 
 .lecturer-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
     padding: 20px;
     width: 280px;
     text-align: center;
@@ -67,7 +91,7 @@ main {
 
 .lecturer-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .lecturer-card img {
@@ -78,10 +102,6 @@ main {
     margin-bottom: 15px;
 }
 
-article {
-    margin-bottom: 40px;
-}
-
 figure {
     margin: 20px 0;
     text-align: center;
@@ -90,31 +110,187 @@ figure {
 figure img, figure video {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 15px;
+    border: 5px solid white;
 }
 
 figcaption {
     font-style: italic;
-    color: #666;
+    color: #7a4a3a;
     margin-top: 10px;
-}
-
-h2, h3 {
-    color:#7F5343;
 }
 
 time {
     font-weight: bold;
-    color: #7F5343;
-}
-
-ul {
-    padding-left: 20px;
+    color: #5e2d1a;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: #7a4a3a;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #CCB2A8; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    background-color: #FFA785;
+    transform: scale(1.05);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #CCB2A8;
+    margin: 40px 0;
+}
+
+.about-us section {
+    margin-bottom: 30px;
+}
+
+.values ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.team-photo img {
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: rotate(-1deg); 
+}
+
+.pricing-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.featured {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #CCB2A8;
+    transform: scale(1.05); 
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5e2d1a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5e2d1a;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #777;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    flex-grow: 1; 
+}
+
+.pricing-card li {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(94, 45, 26, 0.2);
+}
+main article {
+    background: rgba(255, 255, 255, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px); 
+}
+
+main section ul {
+    list-style: none;
+    padding: 0;
+}
+
+main section ul li {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(204, 178, 168, 0.5);
+    color: #5e2d1a;
+}
+
+main section ul li::before {
+    content: "•";
+    color: #CCB2A8;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+main article, 
+main section, 
+main header {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.about-us h2, 
+main article h2,
+main h2 {
+    border-bottom: 2px solid #CCB2A8;
+    display: block
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: fit-content;      
+    margin-left: auto; 
+    margin-right: auto;
+    color: #5e2d1a;
+    text-align: center;
 }
