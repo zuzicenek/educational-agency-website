@@ -49,13 +49,12 @@ nav ul li a {
 nav ul li a:hover {
     color: #f5f3f2;
 }
-
 main {
     max-width: 1000px;
-    margin: 10px auto;
-    padding: padding: 10px 30px 30px 30px;
+    margin: 20px auto;
+    padding: 40px;
     background: rgba(217, 187, 176, 0.8); 
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .about-us h2, 
@@ -135,9 +134,8 @@ footer {
 .hero {
     text-align: center;
     padding: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
     margin-bottom: 30px;
+    background: none;
 }
 
 .cta-button {
@@ -232,26 +230,23 @@ hr {
     font-weight: normal;
     color: #777;
 }
-
 .pricing-card ul {
     list-style: none;
     padding: 0;
     margin: 0 0 30px 0;
-    flex-grow: 1; 
+    text-align: center;
 }
 
 .pricing-card li {
-    padding: 8px 0;
-    border-bottom: 1px dashed rgba(94, 45, 26, 0.2);
+    text-align: center;
 }
+
 main article {
-    background: rgba(255, 255, 255, 0.6); 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(4px); 
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 40px;
 }
 
 main section ul {
@@ -273,19 +268,12 @@ main section ul li::before {
     width: 1em;
     margin-left: -1em;
 }
-main article, 
-main section, 
-main header {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
 
 .about-us h2, 
 main article h2,
 main h2 {
     border-bottom: 2px solid #CCB2A8;
-    display: block
+    display: block;
     padding-bottom: 5px;
     margin-bottom: 20px;
     width: fit-content;      
@@ -293,4 +281,22 @@ main h2 {
     margin-right: auto;
     color: #5e2d1a;
     text-align: center;
+}
+.card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+main section {
+    background: none;
+    border: none;
+    box-shadow: none;
 }
